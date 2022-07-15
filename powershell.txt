@@ -1,0 +1,16 @@
+Get-NetConnectionProfile
+Set-NetConnectionProfile -Name "Неопознанная сеть" -NetworkCategory Private
+
+# In my language "Unknown network" is "Неопознанная сеть"
+Ethernet Неопознанная сеть IPv4
+10.0.0.1 
+255.255.255.0
+ssh pi@10.0.0.2 Password: raspberry
+
+bluetooth:
+sudo bluetoothctl
+scan on
+pair MAC
+trust MAC
+
+On iphone create an AP, pair with bluetooth and chill.
